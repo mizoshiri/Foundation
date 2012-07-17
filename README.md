@@ -140,6 +140,7 @@ Module
         </tr>
         <tr>
             <td><code>inner</code></td>
+            <td>&nbsp;</td>
             <td>Module inner object</td>
             <td>Yes</td>
         </tr>

@@ -1,6 +1,8 @@
 Foundation
 ================================
 
+Build it strong.
+
 Template
 -------------------------
 
@@ -30,18 +32,51 @@ Grid
 Module
 -------------------------
 
+<table>
+    <thead>
+        <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Required?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>mod</code></td>
+            <td>Module container object</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td><code>inner</code></td>
+            <td>Module inner object</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td><code>hd</code></td>
+            <td>Module header object</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td><code>bd</code></td>
+            <td>Module body object</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td><code>ft</code></td>
+            <td>Module footer object</td>
+            <td>No</td>
+        </tr>
+    </tbody>
+</table>
+
+### Example ###
+
 ```html
 <div class="mod">
     <div class="inner">
-        <div class="hd">
-            <h2>Module header</h2>
-        </div>
-        <div class="bd">
-            <p>Module body</p>
-        </div>
-        <div class="ft">
-            <p>Module footer</p>
-        </div>
+        <div class="hd"></div>
+        <div class="bd"></div>
+        <div class="ft"></div>
     </div>
 </div>
 ```

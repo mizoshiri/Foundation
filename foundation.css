@@ -1,0 +1,420 @@
+/**
+ * Foundation
+ *
+ * Build it strong
+ *
+ * CSS version 3
+ *
+ * This source file is subject to the new BSD license that is available through
+ * the world-wide-web at this URL:
+ * http://www.opensource.org/licenses/bsd-license
+ *
+ * @category   CSS
+ * @package    Foundation
+ * @subpackage Core
+ */
+
+/**
+ * Reset
+ *
+ * @category   Foundation
+ * @package    Core
+ * @subpackage Reset
+ */
+html {
+    color: #000;
+    background: #fff;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset, img { border: 0; }
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+ol, ul { list-style: none; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+q:before, q:after { content: ''; }
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+input, textarea, select { *font-size: 100%; }
+legend { color: #000; }
+
+/**
+ * Font
+ *
+ * @category   Foundation
+ * @package    Core
+ * @subpackage Font
+ */
+body {
+    font: 13px/1.231 arial, helvetica, clean, sans-serif;
+    *font-size: small;
+    *font: x-small;
+}
+select, input, button, textarea { font: 99% arial, helvetica, clean, sans-serif; }
+table {
+    font-size: inherit;
+    font: 100%;
+}
+pre, code, kbd, samp, tt {
+    font-family: monospace;
+    *font-size: 108%;
+    line-height: 100%;
+}
+
+/**
+ * Template
+ *
+ * @category   Foundation
+ * @package    Core
+ * @subpackage Template
+ */
+body { _text-align:center; }
+.main {
+    display: table-cell;
+    *display: block;
+    width: auto;
+}
+.body, .main { *zoom:1; }
+.body:after, .main:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0 !important;
+    line-height: 0;
+    font-size: xx-large;
+    content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+.page {
+    margin: 0 auto;
+    width: 1000px;
+    _text-align: left;
+}
+.liquid {
+    width: auto;
+    margin: 0;
+}
+.leftCol {
+    float: left;
+    width: 260px;
+    _margin-right: -3px;
+}
+.rightCol {
+    float: right;
+    width: 320px;
+    _margin-left: -3px;
+}
+
+/**
+ * Grid
+ *
+ * @category   Foundation
+ * @package    Core
+ * @subpackage Grid
+ */
+.row, .lastCol {
+    overflow: hidden;
+    *overflow: visible;
+    *zoom: 1;
+}
+.col { float:left; }
+.colRight { float:right; }
+.span1of1, .span2of2, .span3of3, .span4of4, .span5of5, .span6of6, .span7of7, .span8of8, .span9of9, .span10of10, .span11of11, .span12of12 { float: none; }
+.span1of2, .span2of4, .span3of6, .span4of8, .span5of10, .span6of12 { width: 50%; }
+.span1of3, .span2of6, .span3of9, .span4of12 { width: 33.3333333333%; }
+.span2of3, .span4of6, .span6of9, .span8of12 { width: 66.6666666667%; }
+.span1of4, .span2of8, .span3of12 { width: 25%; }
+.span3of4, .span6of8, .span9of12 { width: 75%; }
+.span1of5, .span2of10 { width: 20%; }
+.span2of5, .span4of10 { width: 40%; }
+.span3of5, .span6of10 { width: 60%; }
+.span4of5, .span8of10 { width: 80%; }
+.span1of6, .span2of12 { width: 16.6666666667%; }
+.span5of6, .span10of12 { width: 83.3333333333%; }
+.span1of7 { width: 14.2857142857%; }
+.span2of7 { width: 28.5714285714%; }
+.span3of7 { width: 42.8571428571%; }
+.span4of7 { width: 57.1428571429%; }
+.span5of7 { width: 71.4285714286%; }
+.span6of7 { width: 85.7142857143%; }
+.span1of8 { width: 12.5%; }
+.span3of8 { width: 37.5%; }
+.span5of8 { width: 62.5%; }
+.span7of8 { width: 87.5%; }
+.span1of9 { width: 11.1111111111%; }
+.span2of9 { width: 22.2222222222%; }
+.span4of9 { width: 44.4444444444%; }
+.span5of9 { width: 55.5555555556%; }
+.span7of9 { width: 77.7777777778%; }
+.span8of9 { width: 88.8888888889%; }
+.span1of10 { width: 10%; }
+.span3of10 { width: 30%; }
+.span7of10 { width: 70%; }
+.span9of10 { width: 90%; }
+.span1of11 { width: 9.09090909091%; }
+.span2of11 { width: 18.1818181818%; }
+.span3of11 { width: 27.2727272727%; }
+.span4of11 { width: 36.3636363636%; }
+.span5of11 { width: 45.4545454545%; }
+.span6of11 { width: 54.5454545455%; }
+.span7of11 { width: 63.6363636364%; }
+.span8of11 { width: 72.7272727273%; }
+.span9of11 { width: 81.8181818182%; }
+.span10of11 { width: 90.9090909091%; }
+.span1of12 { width: 8.33333333333%; }
+.span5of12 { width: 41.6666666667%; }
+.span7of12 { width: 58.3333333333%; }
+.span11of12 { width: 91.6666666667%; }
+.lastCol {
+    float: none;
+    width: auto;
+    _position: relative;
+    _left: -3px;
+    _margin-right: -3px;
+}
+
+/**
+ * Module
+ *
+ * @category   Foundation
+ * @package    Core
+ * @subpackage Module
+ */
+.mod { margin:10px; }
+.bd, .ft, .hd {
+    overflow: hidden;
+    *overflow: visible;
+    zoom: 1;
+}
+
+/**
+ * Media
+ *
+ * @category   Foundation
+ * @package    Core
+ * @subpackage Media
+ */
+.media {
+    overflow: hidden;
+    *overflow: visible;
+    zoom: 1;
+}
+.media .img {
+    float: left;
+    margin-right: 10px;
+}
+.media .img img { display:block; }
+.media .imgExt {
+    float: right;
+    margin-left: 10px;
+}
+
+/**
+ * Heading
+ *
+ * @category   Foundation
+ * @package    Core
+ * @subpackage Helper.Heading
+ */
+h1, .h1 {
+    font-size: 138.5%;
+    font-weight: bold;
+    font-style: normal;
+    color: #000;
+}
+h2, .h2 {
+    font-size: 123.1%;
+    font-weight: bold;
+    font-style: normal;
+    color: #000;
+}
+h3, .h3 {
+    font-size: 108%;
+    font-weight: bold;
+    font-style: normal;
+    color: #000;
+}
+h4, .h4 {
+    font-size: 100%;
+    font-weight: bold;
+    font-style: normal;
+    color: #000;
+}
+h5, .h5 {
+    font-size: 100%;
+    font-weight: bold;
+    font-style: normal;
+    color: #000;
+}
+h6, .h6 {
+    font-size: 100%;
+    font-weight: bold;
+    font-style: normal;
+    color: #000;
+}
+
+/**
+ * Border
+ *
+ * @category   Foundation
+ * @package    Core
+ * @subpackage Helper.Border
+ */
+.round {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.roundBL {
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.roundBR {
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.roundTL {
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.roundTR {
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.border {
+    border-style: solid;
+    border-width: 1px;
+}
+
+/**
+ * Color
+ *
+ * @category   Foundation
+ * @package    Core
+ * @subpackage Helper.Color
+ */
+.alert { color: #c09853; }
+.success { color: #468847; }
+.error { color: #b94a48; }
+.info { color: #3a87ad; }
+.light { color: #999; }
+.dark { color: #333; }
+.bright { color: #fff; }
+.dull { color: #666; }
+
+/**
+ * Display
+ *
+ * @category   Foundation
+ * @package    Core
+ * @subpackage Helper.Display
+ */
+.block { display: block; }
+.inline { display: inline; }
+.none { display: none; }
+
+/**
+ * Font
+ *
+ * @category   Foundation
+ * @package    Core
+ * @subpackage Helper.Font
+ */
+.less { font-size: 90%; }
+.muchLess { font-size: 80%; }
+.more { font-size: 110%; }
+.muchMore { font-size: 120%; }
+.tight { line-height: 90%; }
+.veryTight { line-height: 80%; }
+.loose { line-height: 110%; }
+.veryLoose { line-height: 120%; }
+.loud { font-weight: bold; }
+.quiet { font-weight: normal; }
+
+/**
+ * Space
+ *
+ * p/m = padding/margin
+ * a/t/r/b/l/h/v = all/top/right/bottom/left/horizontal/vertical
+ * s/m/l/n = small/medium/large/none
+ *
+ * @category   Foundation
+ * @package    Core
+ * @subpackage Helper.Space
+ */
+.space {
+  background: #fff;
+  color: #fff;
+  visibility: hidden;
+}
+.ptn, .pvn, .pan { padding-top: 0px !important; }
+.pts, .pvs, .pas { padding-top: 5px !important; }
+.ptm, .pvm, .pam { padding-top: 10px !important; }
+.ptl, .pvl, .pal { padding-top: 20px !important; }
+.prn, .phn, .pan { padding-right: 0px !important; }
+.prs, .phs, .pas { padding-right: 5px !important; }
+.prm, .phm, .pam { padding-right: 10px !important; }
+.prl, .phl, .pal { padding-right: 20px !important; }
+.pbn, .pvn, .pan { padding-bottom: 0px !important; }
+.pbs, .pvs, .pas { padding-bottom: 5px !important; }
+.pbm, .pvm, .pam { padding-bottom: 10px !important; }
+.pbl, .pvl, .pal { padding-bottom: 20px !important; }
+.pln, .phn, .pan { padding-left: 0px !important; }
+.pls, .phs, .pas { padding-left: 5px !important; }
+.plm, .phm, .pam { padding-left: 10px !important; }
+.pll, .phl, .pal { padding-left: 20px !important; }
+.mtn, .mvn, .man { margin-top: 0px !important; }
+.mts, .mvs, .mas { margin-top: 5px !important; }
+.mtm, .mvm, .mam { margin-top: 10px !important; }
+.mtl, .mvl, .mal { margin-top: 20px !important; }
+.mrn, .mhn, .man { margin-right: 0px !important; }
+.mrs, .mhs, .mas { margin-right: 5px !important; }
+.mrm, .mhm, .mam { margin-right: 10px !important; }
+.mrl, .mhl, .mal { margin-right: 20px !important; }
+.mbn, .mvn, .man { margin-bottom: 0px !important; }
+.mbs, .mvs, .mas { margin-bottom: 5px !important; }
+.mbm, .mvm, .mam { margin-bottom: 10px !important; }
+.mbl, .mvl, .mal { margin-bottom: 20px !important; }
+.mln, .mhn, .man { margin-left: 0px !important; }
+.mls, .mhs, .mas { margin-left: 5px !important; }
+.mlm, .mhm, .mam { margin-left: 10px !important; }
+.mll, .mhl, .mal { margin-left: 20px !important; }
+
+/**
+ * Text
+ *
+ * @category   Foundation
+ * @package    Core
+ * @subpackage Helper.Text
+ */
+.txtC { text-align: center; }
+.txtL { text-align: left; }
+.txtR { text-align: right; }
+.txtT { vertical-align: top; }
+.txtB { vertical-align: bottom; }
+.txtM { vertical-align: middle; }

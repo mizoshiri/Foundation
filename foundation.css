@@ -200,6 +200,13 @@ body { _text-align:center; }
  * Inspired by Golden Grid System by Joni Korpi
  * http://goldengridsystem.com/
  */
+
+.ie .rpage {
+  /* Fixes for IE6-8 http://jonikorpi.com/leaving-old-IE-behind */
+  width: 720px;
+  margin: 0 auto;
+}
+
 .rpage { width: 100%; }
 .rbody { margin: 0 5.55555%; }
 .rspan1of8 { width: 12.5%; }

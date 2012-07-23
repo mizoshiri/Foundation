@@ -97,32 +97,32 @@ body { _text-align:center; }
 .body, .main { *zoom:1; }
 .body:after, .main:after {
     clear: both;
+    content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
     display: block;
-    visibility: hidden;
-    overflow: hidden;
+    font-size: xx-large;
     height: 0 !important;
     line-height: 0;
-    font-size: xx-large;
-    content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+    visibility: hidden;
+    overflow: hidden;
 }
 .page {
     margin: 0 auto;
-    width: 1000px;
     _text-align: left;
+    width: 1000px;
 }
 .liquid {
-    width: auto;
     margin: 0;
+    width: auto;
 }
 .leftCol {
     float: left;
-    width: 260px;
     _margin-right: -3px;
+    width: 260px;
 }
 .rightCol {
     float: right;
-    width: 320px;
     _margin-left: -3px;
+    width: 320px;
 }
 
 /**
@@ -186,10 +186,10 @@ body { _text-align:center; }
 .span11of12 { width: 91.6666666667%; }
 .lastCol {
     float: none;
-    width: auto;
-    _position: relative;
     _left: -3px;
     _margin-right: -3px;
+    _position: relative;
+    width: auto;
 }
 
 /**
@@ -650,46 +650,46 @@ b, strong { font-weight: bold; }
 em, i { font-style: italic; }
 form { }
 h1, .h1 {
-    font-size: 48px;
-    font-weight: bold;
-    font-style: normal;
     color: #333;
+    font-size: 138.5%;
+    font-style: normal;
+    font-weight: bold;
 }
 h2, .h2 {
-    font-size: 36px;
-    font-weight: bold;
-    font-style: normal;
     color: #333;
+    font-size: 123.1%;
+    font-style: normal;
+    font-weight: bold;
 }
 h3, .h3 {
-    font-size: 24px;
-    font-weight: bold;
-    font-style: normal;
     color: #333;
+    font-size: 108%;
+    font-style: normal;
+    font-weight: bold;
 }
 h4, .h4 {
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
     color: #333;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: bold;
 }
 h5, .h5 {
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
     color: #333;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: bold;
 }
 h6, .h6 {
-    font-size: 12px;
-    font-weight: bold;
-    font-style: normal;
     color: #333;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: bold;
 }
 hr {
-    background: #eee;
     color: #eee;
-    height: 1px;
+    background: #eee;
     border: none;
+    height: 1px;
 }
 p {
     line-height: 1.4;

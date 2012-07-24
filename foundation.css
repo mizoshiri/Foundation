@@ -406,13 +406,16 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
   display: inline-block;
-  height: 21px;
+  height: 29px;
   padding: 4px;
   margin-bottom: 9px;
   font-size: 14px;
   line-height: 21px;
-  color: #555555;
+  color: #555555; 
 }
 input,
 textarea {
@@ -917,7 +920,6 @@ a:hover { text-decoration: underline; }
 a:active, a:focus { outline: 0; }
 b, strong { font-weight: bold; }
 em, i { font-style: italic; }
-form { }
 h1, .h1 {
     color: #333;
     font-family: Helmet, Freesans, sans-serif;;

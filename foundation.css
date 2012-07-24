@@ -394,7 +394,7 @@ img {
  * @package    Helper
  * @subpackage Border
  */
-.b {
+.border {
     border-style: solid;
     border-width: 1px;
 }
@@ -551,11 +551,10 @@ img {
  * @package    Helper
  * @subpackage Line.Height
  */
-.lhxs { line-height: 0.8; }
-.lhs { line-height: 1.2; }
-.lhm { line-height: 1.4; }
-.lhl { line-height: 1.6; }
-.lhxl { line-height: 1.8; }
+.veryTight { line-height: 0.8em; }
+.tight { line-height: 1.2em; }
+.loose { line-height: 1.6em; }
+.veryLoose { line-height: 1.8em; }
 
 /**
  * Position
@@ -564,11 +563,10 @@ img {
  * @package    Helper
  * @subpackage Position
  */
-.pa { position: absolute; }
-.pf { position: fixed; }
-.pi { position: inherit; }
-.pr { position: relative; }
-.ps { position: static; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.relative { position: relative; }
+.static { position: static; }
 
 /**
  * Space
@@ -674,7 +672,7 @@ hr {
     height: 1px;
 }
 p {
-    line-height: 1.4;
-    margin-bottom: 1em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
 }
 table { }

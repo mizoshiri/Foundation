@@ -540,9 +540,9 @@ img {
  * @package    Helper
  * @subpackage Display
  */
-.db { display: block; }
-.di { display: inline; }
-.dn { display: none; }
+.block { display: block; }
+.inline { display: inline; }
+.hide { display: none; }
 
 /**
  * Line Height

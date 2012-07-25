@@ -141,11 +141,11 @@ body { _text-align:center; }
 .col { float:left; }
 .colRight { float:right; }
 .span1of1, .span2of2, .span3of3, .span4of4, .span5of5, .span6of6, .span7of7, .span8of8, .span9of9, .span10of10, .span11of11, .span12of12 { width:100%; float: none; }
-.span1of2, .span2of4, .span3of6, .span4of8, .rspan4of8, .span5of10, .span6of12 { width: 50%; }
+.span1of2, .span2of4, .span3of6, .span4of8, .span5of10, .span6of12 { width: 50%; }
 .span1of3, .span2of6, .span3of9, .span4of12 { width: 33.3333333333%; }
-.span2of3, .span4of6, .span6of9, .span8of12 { width: 66.6666666667%; }
-.span1of4, .span2of8, .rspan2of8, .span3of12 { width: 25%; }
-.span3of4, .span6of8, .rspan6of8, .span9of12 { width: 75%; }
+.span2of3, .span4of6, .span6of9 { width: 66.6666666667%; }
+.span1of4, .span2of8, .span3of12 { width: 25%; }
+.span3of4, .span6of8, .span9of12 { width: 75%; }
 .span1of5, .span2of10 { width: 20%; }
 .span2of5, .span4of10 { width: 40%; }
 .span3of5, .span6of10 { width: 60%; }
@@ -158,10 +158,10 @@ body { _text-align:center; }
 .span4of7 { width: 57.1428571429%; }
 .span5of7 { width: 71.4285714286%; }
 .span6of7 { width: 85.7142857143%; }
-.span1of8, .rspan1of8 { width: 12.5%; }
-.span3of8, .rspan3of8 { width: 37.5%; }
-.span5of8, .rspan5of8 { width: 62.5%; }
-.span7of8, .rspan7of8 { width: 87.5%; }
+.span1of8 { width: 12.5%; }
+.span3of8 { width: 37.5%; }
+.span5of8 { width: 62.5%; }
+.span7of8 { width: 87.5%; }
 .span1of9 { width: 11.1111111111%; }
 .span2of9 { width: 22.2222222222%; }
 .span4of9 { width: 44.4444444444%; }
@@ -197,19 +197,19 @@ body { _text-align:center; }
     clear: both;
     width: 100%;
 }
-.fold .rspan1of8 { width: 25%; }
-.fold .rspan2of8 { width: 50.0%; }
-.fold .rspan3of8 { width: 75.0%; }
-.fold .rspan4of8 { width: 100%; }
+.fold > .span1of8 { width: 25%; }
+.fold > .span2of8 { width: 50.0%; }
+.fold > .span3of8 { width: 75.0%; }
+.fold > .span4of8 { width: 100%; }
 @media screen and (min-width: 720px) {
     .fold {
         clear: none;
         width: auto;
     }
-    .fold .rspan1of8 { width: 12.5%; }
-    .fold .rspan2of8 { width: 25.0%; }
-    .fold .rspan3of8 { width: 37.5%; }
-    .fold .rspan4of8 { width: 50.0%; }
+    .fold > .span1of8 { width: 12.5%; }
+    .fold > .span2of8 { width: 25.0%; }
+    .fold > .span3of8 { width: 37.5%; }
+    .fold > .span4of8 { width: 50.0%; }
 }
 @media screen and (min-width: 1392px) {
     .body { margin: 0 16.666666666666664%; }

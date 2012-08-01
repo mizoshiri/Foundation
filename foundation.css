@@ -212,10 +212,10 @@ body { _text-align:center; }
     .fold > .span4of8 { width: 50.0%; }
 }
 @media screen and (min-width: 1392px) {
-    .body { margin: 0 16.666666666666664%; }
+    .body { margin: 0 5.55555%; /*Customise*/ }
 }
 @media screen and (min-width: 1680px) {
-    .body { margin: 0 27.77777777777778%; }
+    .body { margin: 0 5.55555%; /*Customise*/ }
 }
 
 /**

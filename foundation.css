@@ -486,6 +486,129 @@ body { _text-align:center; }
 }
 
 /**
+ * Drop Shadow
+ *
+ * ds = drop shadow
+ * d/u/l/r/m = down/up/left/right/middle
+ * s/m/l/n = small/medium/large/none
+ *
+ * @category   Foundation
+ * @package    Helper
+ * @subpackage Drop.Shdadow
+ */
+.dsds {
+	-moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .25);
+}
+.dsus {
+	-moz-box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, .25);
+}
+.dsls {
+	-moz-box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, .25);
+	box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, .25);
+}
+.dsrs {
+	-moz-box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, .25);
+	box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, .25);
+}
+.dsms {
+	-moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .25);
+}
+.dsdm {
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .25);
+}
+.dsum {
+	-moz-box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, .25);
+}
+.dslm {
+	-moz-box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, .25);
+	box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, .25);
+}
+.dsrm {
+	-moz-box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, .25);
+	box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, .25);
+}
+.dsmm {
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .25);
+}
+.dsdl {
+	-moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .25);
+}
+.dsul{
+	-moz-box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, .25);
+}
+.dsll {
+	-moz-box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, .25);
+	box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, .25);
+}
+.dsrl {
+	-moz-box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, .25);
+	box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, .25);
+}
+.dsml {
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .25);
+}
+.dsn {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/**
+ * Text Shadow
+ *
+ * ts = text shadow
+ * s/m/l/n = small/medium/large/none
+ *
+ * @category   Foundation
+ * @package    Helper
+ * @subpackage Text.Shdadow
+ */
+.tss {
+	-moz-text-shadow:0px 0px 4px #000;
+	-webkit-text-shadow:0px 0px 4px #000;
+	text-shadow:0px 0px 4px #000;
+}
+.tsm {
+	-moz-text-shadow:0px 4px 2px #000;
+	-webkit-text-shadow:0px 4px 2px #000;
+	text-shadow:0px 4px 2px #000;
+}
+.tsl {
+	-moz-text-shadow:0px 6px 3px #000;
+	-webkit-text-shadow:0px 6px 3px #000;
+	text-shadow:0px 6px 3px #000;
+}
+.tsn {
+	-moz-text-shadow: none;
+	-webkit-text-shadow: none;
+	text-shadow: none;
+}
+
+/**
  * Color
  *
  * @category   Foundation

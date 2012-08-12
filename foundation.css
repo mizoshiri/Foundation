@@ -67,7 +67,7 @@ legend { color: #333; /* @defaultFontColor */ }
  * @package  Font
  */
 body {
-    font: 13px/1.231 arial, helvetica, clean, sans-serif;
+    font: 14px/1.5em arial, helvetica, clean, sans-serif;
     *font-size: small;
     *font: x-small;
 }
@@ -140,7 +140,10 @@ body { _text-align:center; }
 }
 .col { float:left; }
 .colRight { float:right; }
-.span1of1, .span2of2, .span3of3, .span4of4, .span5of5, .span6of6, .span7of7, .span8of8, .span9of9, .span10of10, .span11of11, .span12of12 { width:100%; float: none; }
+.span1of1, .span2of2, .span3of3, .span4of4, .span5of5, .span6of6, .span7of7, .span8of8, .span9of9, .span10of10, .span11of11, .span12of12 {
+    width:100%;
+    float: none;
+}
 .span1of2, .span2of4, .span3of6, .span4of8, .span5of10, .span6of12 { width: 50%; }
 .span1of3, .span2of6, .span3of9, .span4of12 { width: 33.3333333333%; }
 .span2of3, .span4of6, .span6of9 { width: 66.6666666667%; }
@@ -198,8 +201,8 @@ body { _text-align:center; }
     width: 100%;
 }
 .fold > .span1of8 { width: 25%; }
-.fold > .span2of8 { width: 50.0%; }
-.fold > .span3of8 { width: 75.0%; }
+.fold > .span2of8 { width: 50%; }
+.fold > .span3of8 { width: 75%; }
 .fold > .span4of8 { width: 100%; }
 @media screen and (min-width: 720px) {
     .fold {
@@ -207,9 +210,9 @@ body { _text-align:center; }
         width: auto;
     }
     .fold > .span1of8 { width: 12.5%; }
-    .fold > .span2of8 { width: 25.0%; }
+    .fold > .span2of8 { width: 25%; }
     .fold > .span3of8 { width: 37.5%; }
-    .fold > .span4of8 { width: 50.0%; }
+    .fold > .span4of8 { width: 50%; }
 }
 @media screen and (min-width: 1392px) {
     .body { margin: 0 5.55555%; /*Customise*/ }
@@ -301,7 +304,7 @@ body { _text-align:center; }
  * @category Foundation
  * @package  Module
  */
-.mod { margin:10px; }
+.mod { margin: 10px; }
 .bd, .ft, .hd {
     overflow: hidden;
     *overflow: visible;
@@ -346,196 +349,6 @@ body { _text-align:center; }
     display: block;
     height: auto;
     max-width: 100%;
-}
-
-/**
- * Forms 
- *
- * @category   Foundation
- * @package    Helper
- * @subpackage Forms 
- */
-
-label,
-input,
-button,
-select,
-textarea {
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 21px;
-}
-input,
-button,
-select,
-textarea {
-    font-family: Helmet, Freesans, sans-serif;;
-}
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;         /* Opera/IE 8+ */
-  display: inline-block;
-  height: 29px;
-  padding: 4px;
-  margin-bottom: 9px;
-  font-size: 14px;
-  line-height: 21px;
-  color: #555555; 
-}
-input,
-textarea {
-  width: 210px;
-  margin: 0;
-}
-textarea {
-  height: auto;
-}
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-  transition: border linear 0.2s, box-shadow linear 0.2s;
-}
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus {
-  border-color: rgba(82, 168, 236, 0.8);
-  outline: 0;
-  outline: thin dotted \9;
-  /* IE6-9 */
-
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-}
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 5px 0;
-  *margin-top: 0;
-  /* IE7 */
-
-  line-height: normal;
-  cursor: pointer;
-}
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-input[type="radio"],
-input[type="checkbox"] {
-  width: auto;
-}
-.uneditable-textarea {
-  width: auto;
-  height: auto;
-}
-select,
-input[type="file"] {
-  height: 28px;
-  /* In IE7, the height of the select element cannot be changed by height, only font-size */
-
-  *margin-top: 4px;
-  /* For IE7, add top margin to align select with labels */
-
-  line-height: 28px;
-}
-select {
-  width: 220px;
-  border: 1px solid #bbb;
-}
-select[multiple],
-select[size] {
-  height: auto;
-}
-select:focus,
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.radio,
-.checkbox {
-  min-height: 21px;
-  padding-left: 21px;
-}
-.radio input[type="radio"],
-.checkbox input[type="checkbox"] {
-  float: left;
-  margin-left: -20px;
-}
-.controls > .radio:first-child,
-.controls > .checkbox:first-child {
-  padding-top: 5px;
-}
-.radio.inline,
-.checkbox.inline {
-  display: inline-block;
-  padding-top: 5px;
-  margin-bottom: 0;
-  vertical-align: middle;
-}
-.radio.inline + .radio.inline,
-.checkbox.inline + .checkbox.inline {
-  margin-left: 10px;
 }
 
 /**
@@ -673,6 +486,129 @@ input[type="checkbox"]:focus {
 }
 
 /**
+ * Drop Shadow
+ *
+ * ds = drop shadow
+ * d/u/l/r/m = down/up/left/right/middle
+ * s/m/l/n = small/medium/large/none
+ *
+ * @category   Foundation
+ * @package    Helper
+ * @subpackage Drop.Shdadow
+ */
+.dsds {
+	-moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .25);
+}
+.dsus {
+	-moz-box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, .25);
+}
+.dsls {
+	-moz-box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, .25);
+	box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, .25);
+}
+.dsrs {
+	-moz-box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, .25);
+	box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, .25);
+}
+.dsms {
+	-moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .25);
+}
+.dsdm {
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .25);
+}
+.dsum {
+	-moz-box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, .25);
+}
+.dslm {
+	-moz-box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, .25);
+	box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, .25);
+}
+.dsrm {
+	-moz-box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, .25);
+	box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, .25);
+}
+.dsmm {
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .25);
+}
+.dsdl {
+	-moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .25);
+}
+.dsul{
+	-moz-box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, .25);
+}
+.dsll {
+	-moz-box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, .25);
+	box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, .25);
+}
+.dsrl {
+	-moz-box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, .25);
+	box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, .25);
+}
+.dsml {
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .25);
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .25);
+}
+.dsn {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/**
+ * Text Shadow
+ *
+ * ts = text shadow
+ * s/m/l/n = small/medium/large/none
+ *
+ * @category   Foundation
+ * @package    Helper
+ * @subpackage Text.Shdadow
+ */
+.tss {
+	-moz-text-shadow:0px 0px 4px #000;
+	-webkit-text-shadow:0px 0px 4px #000;
+	text-shadow:0px 0px 4px #000;
+}
+.tsm {
+	-moz-text-shadow:0px 4px 2px #000;
+	-webkit-text-shadow:0px 4px 2px #000;
+	text-shadow:0px 4px 2px #000;
+}
+.tsl {
+	-moz-text-shadow:0px 6px 3px #000;
+	-webkit-text-shadow:0px 6px 3px #000;
+	text-shadow:0px 6px 3px #000;
+}
+.tsn {
+	-moz-text-shadow: none;
+	-webkit-text-shadow: none;
+	text-shadow: none;
+}
+
+/**
  * Color
  *
  * @category   Foundation
@@ -701,14 +637,14 @@ input[type="checkbox"]:focus {
 .bgDark { background-color: #333; }
 
 /**
- * Buttons 
+ * Button
  *
  * @category   Foundation
  * @package    Helper
- * @subpackage Buttons
+ * @subpackage Button
  */
-.btn { 
-    border: 1px solid #dddddd; 
+.btn {
+    border: 1px solid #ddd;
     background-color: #ededed;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ededed));
     background-image: -moz-linear-gradient(#ffffff, #ededed);
@@ -716,83 +652,80 @@ input[type="checkbox"]:focus {
     background-image: linear-gradient(#ffffff, #ededed);
     -webkit-background-clip: padding;
     -moz-background-clip: padding;
-    -o-background-clip: padding-box; 
+    -o-background-clip: padding-box;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-    -webkit-appearance:none;
+    -webkit-appearance: none;
     border-color: rgb(220,220,220);
-    color: #333333;
-    cursor: pointer; 
-    display: inline-block; 
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
     font-size: 14px;
-    outline: none;  
-    overflow: visible; 
-    padding: 7px 10px; 
-    text-decoration: none; 
+    outline: none;
+    overflow: visible;
+    padding: 7px 10px;
+    text-decoration: none;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-    white-space: nowrap; 
-    /* IE hacks */
-    zoom: 1; 
+    white-space: nowrap;
+    zoom: 1;
     *display: inline;
 }
-
-.btn:hover,.btn:focus,.btn:active {
-    background: #ededed; 
+.btn:hover, .btn:focus, .btn:active {
+    background: #ededed;
     text-decoration: none;
 }
-
 .btnLarge {
     font-size: 21px;
-    padding: 14px 20px; 
+    padding: 14px 20px;
 }
-.btnAlert { 
-    border: 1px solid #c67605; 
+.btnAlert {
+    border: 1px solid #c67605;
     background-color: #F89406;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FBB450), to(#F89406));
     background-image: -moz-linear-gradient(#FBB450, #F89406);
     background-image: -o-linear-gradient(#FBB450, #F89406);
     background-image: linear-gradient(#FBB450, #F89406);
-    color: #ffffff; 
+    color: #ffffff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-.btnAlert:hover,.btnAlert:focus,.btnAlert:active { background: #F89406; }
-.btnSuccess { 
-    border: 1px solid #418241; 
+.btnAlert:hover, .btnAlert:focus, .btnAlert:active { background: #F89406; }
+.btnSuccess {
+    border: 1px solid #418241;
     background-color: #51A351;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62C462), to(#51A351));
     background-image: -moz-linear-gradient(#62C462, #51A351);
     background-image: -o-linear-gradient(#62C462, #51A351);
     background-image: linear-gradient(#62C462, #51A351);
-    color: #ffffff; 
+    color: #ffffff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-.btnSuccess:hover,.btnSuccess:focus,.btnSuccess:active { background: #51A351; }
-.btnError { 
-    border: 1px solid #972b26; 
+.btnSuccess:hover, .btnSuccess:focus, .btnSuccess:active { background: #51A351; }
+.btnError {
+    border: 1px solid #972b26;
     background-color: #DA4F49;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#EE5F5B), to(#BD362F));
     background-image: -moz-linear-gradient(#EE5F5B, #BD362F);
     background-image: -o-linear-gradient(#EE5F5B, #BD362F);
     background-image: linear-gradient(#EE5F5B, #BD362F);
-    color: #ffffff; 
+    color: #ffffff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-.btnError:hover,.btnError:focus,.btnError:active { background: #BD362F; }
-.btnInfo { 
-    border: 1px solid #267890; 
+.btnError:hover, .btnError:focus, .btnError:active { background: #BD362F; }
+.btnInfo {
+    border: 1px solid #267890;
     background-color: #2F96B4;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5BC0DE), to(#2F96B4));
     background-image: -moz-linear-gradient(#5BC0DE, #2F96B4);
     background-image: -o-linear-gradient(#5BC0DE, #2F96B4);
     background-image: linear-gradient(#5BC0DE, #2F96B4);
-    color: #ffffff; 
+    color: #ffffff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-.btnInfo:hover,.btnInfo:focus,.btnInfo:active { background: #2F96B4; }
+.btnInfo:hover, .btnInfo:focus, .btnInfo:active { background: #2F96B4; }
 
 /**
  * Display
@@ -806,7 +739,7 @@ input[type="checkbox"]:focus {
 .hide { display: none; }
 
 /**
- * Line Height
+ * Heading
  *
  * @category   Foundation
  * @package    Helper
@@ -952,4 +885,100 @@ hr {
 p {
   margin-bottom: 1.5em;
 }
-table { }
+label, input, button, select, textarea {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 29px;
+    padding: 4px;
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #555;
+}
+input, textarea {
+  width: 210px;
+  margin: 0;
+}
+textarea {
+  height: auto;
+}
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+}
+input[type="radio"], input[type="checkbox"] {
+    margin: 5px 0;
+    *margin-top: 0;
+    line-height: normal;
+    cursor: pointer;
+}
+input[type="submit"], input[type="reset"], input[type="button"], input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+select, input[type="file"] {
+    height: 28px;
+    *margin-top: 4px;
+    line-height: 28px;
+}
+select {
+    width: 220px;
+    border: 1px solid #bbb;
+}
+select[multiple], select[size] {
+    height: auto;
+}
+select:focus, input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.radio, .checkbox {
+    min-height: 21px;
+    padding-left: 21px;
+}
+.radio input[type="radio"], .checkbox input[type="checkbox"] {
+    float: left;
+    margin-left: -20px;
+}
+.controls > .radio:first-child, .controls > .checkbox:first-child {
+    padding-top: 5px;
+}
+.radio.inline, .checkbox.inline {
+    display: inline-block;
+    padding-top: 5px;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.radio.inline + .radio.inline, .checkbox.inline + .checkbox.inline {
+    margin-left: 10px;
+}

@@ -231,13 +231,23 @@ body { _text-align:center; }
     font-size: 14px;
     line-height: 1.5em;
 }
+.tiny {
+    font-size: 6px;
+    line-height: 2.8em;
+    margin-bottom: 2.8em;
+}
+.verySmall {
+    font-size: 8px;
+    line-height: 1.2em;
+    margin-bottom: 1.2em;
+}
 .small {
     font-size: 10px;
     line-height: 2.1em;
     margin-bottom: 2.1em;
 }
 .normal {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5em;
     margin-bottom: 1.5em;
 }
@@ -265,6 +275,16 @@ body { _text-align:center; }
     .body {
         font-size: 14px;
         line-height: 1.5em;
+    }
+	.tiny {
+	    font-size: 10px;
+	    line-height: 2.8em;
+	    margin-bottom: 2.8em;
+	}
+    .verySmall {
+        font-size: 12px;
+        line-height: 1.2em;
+        margin-bottom: 1.2em;
     }
     .small {
         font-size: 14px;

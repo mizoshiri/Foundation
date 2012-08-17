@@ -391,8 +391,8 @@ body { _text-align:center; }
     border-left-width: 1px;
 }
 .borderR {
-    border-top-style: solid;
-    border-top-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
 }
 .borderT {
     border-top-style: solid;
